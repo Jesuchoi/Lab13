@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>List Style Image</title>
+<style>
+  ul.custom-list {
+    list-style: none; 
+    padding-left: 1em;
+  }
+
+  ul.custom-list li {
+    position: relative;
+    padding-left: 1.5em; 
+    font-size: 1em; 
+  }
+
+  ul.custom-list li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.1em; 
+    width: 1em; 
+    height: 1em;
+    background-image: url('/img/Image.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+</style>
+</head>
+<body>
+
+<h2>Image List</h2>
+<ul class="custom-list">
+  <li>Coke</li>
+  <li>Sting</li>
+  <li>Soda</li>
+  <li>Beer</li>
+  <li>Snack</li>  
+</ul>
+
+</body>
+</html>
